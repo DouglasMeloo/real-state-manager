@@ -61,4 +61,11 @@ def update_property(connector):
     print("bedrooms:", property_data[4])
     print("Bathrooms:", property_data[5])
     print("Location:", property_data[6])
-    
+
+    new_house = {}
+    for key in ["title", "description", "price", "bedrooms", "bathrooms", "location"]:
+        if key == "price" or key == "bedrroms" or key == "bathrooms":
+            new_house[key] = validate_integer_input(f"Enter the new {key}:")
+        else:
+            new_house[key] = input(f"Enter the new {key}:")
+            
