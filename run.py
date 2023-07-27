@@ -1,9 +1,11 @@
 import os
 import sqlite3
 
+# Constants for the database file and table
 DATABASE = "./real_estate.db"
 TABLE = "property_listings"
 
+# Function to validate and get a positive integer input from the user
 def validate_integer_input(prompt):
     while True:
         try:
@@ -14,6 +16,7 @@ def validate_integer_input(prompt):
         except ValueError:
             print("Invalid input. Please enter a positive integer.")
 
+# Function to create a new property entry in the database
 def create_house(connector):
     new_house = {
         "title" : "",
@@ -24,6 +27,7 @@ def create_house(connector):
         "location" : "",
     }
 
+    # Collect property details from the user
     for key in new_house:
         if key == "price" or key == "bedrooms" or key == "bathrooms":
             new_house[key] = validate_integer_input(f"Insert the {key}: ")
@@ -31,17 +35,20 @@ def create_house(connector):
             new_house[key] = input(f"Insert the {key}: ")
             
     print(new_house)
+
+    # Insert the new property into the database
     cursor = connector.cursor()
     sql_insert = f"INSERT INTO {TABLE} (title, description, price, bedrooms, bathrooms, location) VALUES (?, ?, ?, ?, ?, ?)"
     values = (new_house["title"], new_house["description"], new_house["price"], new_house["bedrooms"], new_house["bathrooms"], new_house["location"])
     cursor.execute(sql_insert, values)
     connector.commit()
 
+    # Get the last inserted row ID (primary key) and print it
     last_inserted_id = cursor.lastrowid
     print("Last inserted rowid:", last_inserted_id)
 
     cursor.close()
-
+# Function to update an existing property in the database
 def update_property(connector):
     property_id = validate_integer_input("Enter the ID of property to update:")
     cursor = connector.cursor()
@@ -90,6 +97,7 @@ def update_property(connector):
     cursor.close()
     print("Property updated successfully.")
 
+# Function to delete a property from the database
 def delete_property(connector):
     property_id = validate_integer_input("Enter the ID of property to delete:")
     cursor = connector.cursor()
@@ -120,6 +128,7 @@ def delete_property(connector):
     else:
         print("Deletion canceled.")
 
+# Function to query and display all properties in the database
 def query_properties(connector):
     cursor = connector.cursor()
     cursor.execute(f"SELECT * FROM {TABLE}")
@@ -140,6 +149,7 @@ def query_properties(connector):
             print("Location:", property_data[6])
             print("--------------------")
 
+# Function to create the database table if it does not exist
 def create_table(databasepath):
     connection = sqlite3.connect(DATABASE)
     cursor = connection.cursor()
@@ -158,6 +168,7 @@ def create_table(databasepath):
     connection.commit()
     return connection
 
+# Main function to run the real estate manager program
 def main():
     connector = create_table(DATABASE)
 
