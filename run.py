@@ -74,7 +74,7 @@ def update_property(connector):
         UPDATE {TABLE} SET title = ?, description = ?, price = ?, bedrooms = ?, bathrooms = ?, location = ?
         WHERE id = ?
     """
-    
+
     values  = (
         new_house["title"],
         new_house["description"],
@@ -90,3 +90,10 @@ def update_property(connector):
     cursor.close()
     print("Property updated successfully.")
 
+def delete_property(connector):
+    property_id = validate_integer_input("Enter the ID of property to delete:")
+    cursor = connector.cursor()
+    cursor.execute(f"SELECT * FROM {TABLE} WHERE id = ?", (property_id,))
+    property_data = cursor.fetchone()
+    cursor.close()
+    
