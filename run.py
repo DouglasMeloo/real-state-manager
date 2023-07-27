@@ -36,4 +36,6 @@ def create_house(connector):
     values = (new_house["title"], new_house["description"], new_house["price"], new_house["bedrooms"], new_house["bathrooms"], new_house["location"])
     cursor.execute(sql_insert, values)
     connector.commit()
-    
+
+    last_inserted_id = cursor.lastrowid
+    print("Last inserted rowid:", last_inserted_id)
