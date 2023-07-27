@@ -45,6 +45,8 @@ Real Estate Manager is a Python command-line application that allows users to ma
 
      * The project utilized Git for version control, enabling efficient tracking of changes made during the development process.
 
-     * ![Heroku Deployed](https://img.shields.io/badge/Heroku-Deployed-yellow?logo=heroku&logoColor=white)
+* ![Heroku Deployed](https://img.shields.io/badge/Heroku-Deployed-yellow?logo=heroku&logoColor=white)
 
      * Heroku was employed to deploy a live view of the project, allowing users to access and interact with it online.
+
+## Deployment 
