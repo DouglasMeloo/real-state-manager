@@ -160,4 +160,13 @@ def create_table(databasepath):
 
 def main():
     connector = create_table(DATABASE)
-    
+
+    while True:
+        print("\n--- Real Estate Manager ---")
+        print("1.Add a new property")
+        print("2.Update a propery")
+        print("3.Delete a property")
+        print("4.View all properties")
+        print("5.Exit")
+
+        
