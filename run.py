@@ -13,4 +13,14 @@ def validate_integer_input(prompt):
             return value
         except ValueError:
             print("Invalid input. Please enter a positive integer.")
+
+def create_house(connector):
+    new_house = {
+        "title" : "",
+        "description" : "",
+        "price" : 0,
+        "bedrooms" : 0,
+        "bathrooms" : 0,
+        "location" : "",
+    }
             
