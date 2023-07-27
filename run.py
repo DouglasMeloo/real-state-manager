@@ -169,4 +169,18 @@ def main():
         print("4.View all properties")
         print("5.Exit")
 
-        
+        choice = input("Enter your choice(1/2/3/4/5):")
+
+        if choice == "1":
+            create_house(connector)
+        elif choice == "2":
+            update_property(connector)
+        elif choice == "3":
+            delete_property(connector)
+        elif choice == "4":
+            query_properties(connector)
+        elif choice == "5":
+            break
+        else:
+            print("Invalid choice. Please try again.")
+            
