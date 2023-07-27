@@ -109,3 +109,13 @@ def delete_property(connector):
     print("Bedrooms:", property_data[4])
     print("Bathrooms:", property_data[5])
     print("Location:", property_data[6])
+    
+    confirmation = input("Are you sure you want to delete this property? (yes/no): ")
+    if confirmation.lower() == "yes":
+        cursor = connector.cursor()
+        cursor.execute(f"DELETE FROM {TABLE} WHERE id = ?", (property_id,))
+        connector.commit()
+        cursor.close()
+        print("Property deleted successfully.")
+    else:
+        print("Deletion canceled.")
