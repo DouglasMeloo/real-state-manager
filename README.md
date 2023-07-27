@@ -12,7 +12,7 @@ Real Estate Manager is a Python command-line application that allows users to ma
   * [Heroku Deployment](#heroku-deployment)
   * [Run locally](#run-locally)
 * [Design](#design)
-  * [Existing Features](#existing-features)
+  * [Features](#features)
   * [Potential Enhancements](#potential-enhancements)
 * [User Experience](#user-experience-ux)
 * [Testing](#testing)
