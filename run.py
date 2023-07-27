@@ -154,3 +154,6 @@ def create_table(databasepath):
             location TEXT NOT NULL
         )
     """)
+    
+    connection.commit()
+    return connection
