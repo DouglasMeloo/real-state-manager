@@ -120,10 +120,10 @@ def delete_property(connector):
     else:
         print("Deletion canceled.")
 
-def query_property(connector):
+def query_properties(connector):
     cursor = connector.cursor()
     cursor.execute(f"SELECT * FROM {TABLE}")
-    property = cursor.fetchall()
+    properties = cursor.fetchall()
     cursor.close()
 
     if not properties:
