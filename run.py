@@ -96,4 +96,9 @@ def delete_property(connector):
     cursor.execute(f"SELECT * FROM {TABLE} WHERE id = ?", (property_id,))
     property_data = cursor.fetchone()
     cursor.close()
-    
+
+    if not property_data:
+        print("Property with the given ID not found.")
+        return
+
+
