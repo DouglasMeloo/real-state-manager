@@ -39,3 +39,6 @@ def create_house(connector):
 
     last_inserted_id = cursor.lastrowid
     print("Last inserted rowid:", last_inserted_id)
+
+    cursor.close()
+    
