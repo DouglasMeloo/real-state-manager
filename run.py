@@ -41,4 +41,11 @@ def create_house(connector):
     print("Last inserted rowid:", last_inserted_id)
 
     cursor.close()
+
+def update_property(connector):
+    property_id = validate_integer_input("Enter the ID of property to update:")
+    cursor = connector.cursor()
+    cursor.execute(f"SELECT * FROM {TABLE} WHERE id = ? ", (property_id,))
+    property_data = cursor.fetchone()
+    cursor.close()
     
