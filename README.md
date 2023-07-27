@@ -140,3 +140,62 @@ Follow the on-screen prompts to complete the desired action.
      * Enhance error handling to provide more informative and user-friendly error messages.
 
 * Please note that these potential enhancements are suggestions and can be tailored to meet specific project requirements and user needs.
+
+## User Experience
+
+### Target Users
+* The Real Estate Manager is designed for individuals interested in managing and tracking property listings efficiently. Whether you are a real estate agent, property owner, or someone searching for properties, this user-friendly software provides a seamless experience to handle property information.
+
+### User Stories
+     * As a user, I want to add a new property to the database to keep track of various property listings.
+
+     * As a user, I want the ability to update existing property details, such as title, description, price, bedrooms, bathrooms, and location.
+
+     * As a user, I want the option to delete a property entry from the database if it is no longer relevant.
+
+     * As a user, I want to view all property listings in a well-organized manner for easy navigation and reference.
+
+     * As a user, I want the software to validate and ensure that only positive integers are entered for certain property details.
+
+     * As a user, I want the software to provide error messages when invalid data is entered.
+
+### How to Use
+1. Start the Real Estate Manager: 
+     * Launch the software, and it will connect to the real_estate.db database. The main menu will be displayed, providing various options.
+
+2. Add a New Property:
+     * Choose option "1" from the main menu to add a new property.
+     * You will be prompted to input the property details:
+     * Title: Enter a suitable title for the property.
+     * Description: Provide a description of the property.
+     * Price: Enter the property price as a positive integer.
+     * Bedrooms: Enter the number of bedrooms as a positive integer.
+     * Bathrooms: Enter the number of bathrooms as a positive integer.
+     * Location: Specify the location of the property.
+
+3. Update an Existing Property:
+     * Choose option "2" from the main menu to update an existing property.
+     * You will be asked to enter the ID of the property you want to update.
+     * The software will display the current details of the property.
+     * You can modify any property attribute, such as title, description, price, bedrooms, bathrooms, or location.
+     * The software will validate that only positive integers are entered for price, bedrooms, and bathrooms.
+
+4. Delete a Property:
+     * Choose option "3" from the main menu to delete a property.
+     * You will be asked to enter the ID of the property you want to delete.
+     * The software will display the details of the property to confirm the deletion.
+     * You must confirm the deletion by typing "yes" or cancel by typing "no."
+
+5. View All Properties:
+     * Choose option "4" from the main menu to view all property listings.
+     * The software will display the ID, title, description, price, bedrooms, bathrooms, and location of each property.
+     * If no properties are found, a message will indicate that there are no properties listed.
+
+6. Exit the Real Estate Manager:
+     * To exit the software, choose option "5" from the main menu.
+     * All data will be securely saved, and the program will close.
+
+7. User Guidance:
+     * Throughout the process, the software provides clear instructions and ensures that users enter valid and appropriate data.
+     * Positive integers are validated for specific property attributes to prevent data errors.
+     * Each action in the Real Estate Manager is designed to be straightforward and user-friendly, making property management and tracking a seamless experience.
