@@ -23,4 +23,10 @@ def create_house(connector):
         "bathrooms" : 0,
         "location" : "",
     }
+
+    for key in new_house:
+        if key == "price" or key == "bedrooms" or key == "bathrooms":
+            new_house[key] = validate_integer_input(f"Insert the {key}: ")
+        else:
+            new_house[key] = input(f"Insert the {key}: ")
             
