@@ -6,8 +6,8 @@ TABLE = "property_listings"
 
 def validate_integer_input(prompt):
     while True:
-        try: 
-            value = int(input(prompt)):
+        try:
+            value = int(input(prompt))
             if value < 0:
                 raise ValueError("Please enter a positive integer.")
             return value
@@ -30,3 +30,10 @@ def create_house(connector):
         else:
             new_house[key] = input(f"Insert the {key}: ")
             
+    print(new_house)
+    cursor = connector.cursor()
+    sql_insert = f"INSERT INTO {TABLE} (title, description, price, bedrooms, bathrooms, location) VALUES (?, ?, ?, ?, ?, ?)"
+    values = (new_house["title"], new_house["description"], new_house["price"], new_house["bedrooms"], new_house["bathrooms"], new_house["location"])
+    cursor.execute(sql_insert, values)
+    connector.commit()
+    
