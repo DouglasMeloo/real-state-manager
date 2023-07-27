@@ -74,3 +74,14 @@ def update_property(connector):
         UPDATE {TABLE} SET title = ?, description = ?, price = ?, bedrooms = ?, bathrooms = ?, location = ?
         WHERE id = ?
     """
+    values  = (
+        new_house["title"],
+        new_house["description"],
+        new_house["price"],
+        new_house["bedrooms"],
+        new_house["bathrooms"],
+        new_house["location"],
+        property_id
+    )
+
+    
