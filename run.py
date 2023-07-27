@@ -157,3 +157,7 @@ def create_table(databasepath):
     
     connection.commit()
     return connection
+
+def main():
+    connector = create_table(DATABASE)
+    
