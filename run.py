@@ -139,3 +139,18 @@ def query_property(connector):
             print("Bathrooms:", property_data[5])
             print("Location:", property_data[6])
             print("--------------------")
+
+def create_table(databasepath):
+    connection = sqlite3.connect(DATABASE)
+    cursor = connection.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS property_listings (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            title TEXT NOT NULL,
+            description TEXT NOT NULL,
+            price INTEGER NOT NULL,
+            bedrooms INTEGER NOT NULL,
+            bathrooms INTEGER NOT NULL,
+            location TEXT NOT NULL
+        )
+    """)
