@@ -74,6 +74,7 @@ def update_property(connector):
         UPDATE {TABLE} SET title = ?, description = ?, price = ?, bedrooms = ?, bathrooms = ?, location = ?
         WHERE id = ?
     """
+    
     values  = (
         new_house["title"],
         new_house["description"],
@@ -84,4 +85,8 @@ def update_property(connector):
         property_id
     )
 
-    
+    cursor.execute(sql_update, values)
+    connector.commit()
+    cursor.close()
+    print("Property updated successfully.")
+
