@@ -100,5 +100,12 @@ def delete_property(connector):
     if not property_data:
         print("Property with the given ID not found.")
         return
-
-
+    
+    print("Property Details to Delete:")
+    print("ID:", property_data[0])
+    print("Title:", property_data[1])
+    print("Description:", property_data[2])
+    print("Price:", property_data[3])
+    print("Bedrooms:", property_data[4])
+    print("Bathrooms:", property_data[5])
+    print("Location:", property_data[6])
