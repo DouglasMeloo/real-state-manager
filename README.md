@@ -201,3 +201,18 @@ Follow the on-screen prompts to complete the desired action.
      * Each action in the Real Estate Manager is designed to be straightforward and user-friendly, making property management and tracking a seamless experience.
 
 ## Testing
+
+
+## Credits
+
+### References
+* The development of this project drew insights and knowledge from the following sources:
+  *  [Code Institute](https://codeinstitute.net/de/)
+  *  [SQLite 3 Documentation](https://docs.python.org/3/library/sqlite3.html)
+  *  [Python.org](https://peps.python.org/pep-0008/#introduction)
+  *  [W3 Schools](https://www.w3schools.com/python/default.asp#gsc.tab=0)
+
+### Acknowledgements
+* Thanks to my Mentor Graeme Taylor for their valuable guidance and continuous feedback during the project development.
+
+* I wish to extend my heartfelt appreciation to Danilo Martins and Bruno Farias for the continuous support provided throughout the course. Our regular interactions have fostered a collaborative environment, allowing us to exchange ideas and insights, leading to mutual growth and improvement in our respective projects.
