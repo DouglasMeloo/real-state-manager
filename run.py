@@ -68,4 +68,9 @@ def update_property(connector):
             new_house[key] = validate_integer_input(f"Enter the new {key}:")
         else:
             new_house[key] = input(f"Enter the new {key}:")
-            
+
+    cursor = connector.cursor()
+    sql_update = f"""
+        UPDATE {TABLE} SET title = ?, description = ?, price = ?, bedrooms = ?, bathrooms = ?, location = ?
+        WHERE id = ?
+    """
