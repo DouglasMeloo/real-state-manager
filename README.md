@@ -202,6 +202,37 @@ Follow the on-screen prompts to complete the desired action.
 
 ## Testing
 
+#### Testing Process for Real Estate Manager Application
+The real estate manager application underwent rigorous testing to ensure that all functionalities work seamlessly, providing users with an easy and straightforward experience to manage property listings effectively.
+
+* Test Approach:
+During the development process, extensive testing was conducted using the terminal to identify and resolve any potential issues. The test approach included various scenarios with correct and incorrect user inputs to thoroughly evaluate the application's behavior and ensure it handles different situations gracefully.
+
+* Test Cases and Results:
+      * The following test cases were devised to cover the major features of the real estate manager application:
+
+Feature              | Expected Outcome                                   | Testing Performed                                            | Result | Pass/Fail |
+---------------------|----------------------------------------------------|--------------------------------------------------------------|--------|-----------|
+Add a new property   | User enters valid property details.               | Entered property is successfully added to the database, and the last inserted row ID is printed.           | Pass   | Pass      |
+Update a property    | User enters an existing property ID and valid updated details. | Specified property is successfully updated with the new details.           | Pass   | Pass      |
+Delete a property    | User enters an existing property ID and confirms the deletion. | Specified property is successfully deleted from the database.            | Pass   | Pass      |
+View all properties  | The database contains multiple properties.       | All properties are displayed on the console.                       | Pass   | Pass      |
+Exit                 | User chooses to exit the program.                 | The program terminates gracefully.                                           | Pass   | Pass      |
+Validate Integer Input | User enters a positive integer.                   | The function correctly returns the entered value.                                  | Pass   | Pass      |
+Validate Integer Input (Negative Scenario) | User enters a negative integer or a non-integer value. | The function prompts the user until a valid positive integer is provided.  | Pass   | Pass      |
+
+
+#### Conclusion:
+Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly.
+
+#### Bugs Fixed 
+* During the PEP8 tests, the following errors were found in the real estate manager program:
+
+1. E501 Line Too Long: Lines exceeding the maximum length (79 characters) were identified. This was fixed by breaking the long lines into smaller, readable chunks.
+2. E302 Expected 2 Blank Lines, Found 1: Insufficient blank lines were observed between code blocks. The code was modified to include the required two blank lines for better readability.
+
+* The issues were resolved in the following git commit:
+      * commit: 743cdcb
 
 ## Credits
 
