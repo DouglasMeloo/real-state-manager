@@ -226,7 +226,8 @@ Validate Integer Input (Negative Scenario) | User enters a negative integer or a
 Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly.
 
 #### Bugs Fixed 
-* During the PEP8 tests, the following errors were found in the real estate manager program:
+* PEP8 Validator
+      * During the PEP8 tests, the following errors were found in the real estate manager program:
 
 1. E501 Line Too Long: Lines exceeding the maximum length (79 characters) were identified. This was fixed by breaking the long lines into smaller, readable chunks.
 2. E302 Expected 2 Blank Lines, Found 1: Insufficient blank lines were observed between code blocks. The code was modified to include the required two blank lines for better readability.
