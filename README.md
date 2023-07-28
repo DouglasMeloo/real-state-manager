@@ -82,7 +82,7 @@ You can rearrange them by dragging if needed.
 
 # Design 
 
-### Features <p align="right">[(Back to Top)](#top)</p>
+### Features                                      <p align="right">[(Back to Top)](#top)</p>
 * Add a New Property:
      * Users can add a new property to the database by providing details such as title, description, price, number of bedrooms, number of bathrooms, and location.
 
@@ -125,7 +125,7 @@ Follow the on-screen prompts to complete the desired action.
 * Dependencies
      * The Real Estate Manager program uses the sqlite3 module, which is included in the Python standard library.
 
-### Potential Enhancements <p align="right">[(Back to Top)](#top)</p>
+### Potential Enhancements                                            <p align="right">[(Back to Top)](#top)</p>
 * While the current version of the Real Estate Manager provides essential property management functionalities, there are several potential enhancements and additional features that could be implemented in the future to improve the program further:
 
 * Search Functionality: 
