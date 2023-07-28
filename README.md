@@ -75,7 +75,7 @@ You can rearrange them by dragging if needed.
 4. Type "git clone" into the terminal and paste the link you copied in the previous step, then press enter.
 5. This will create a local clone of the repository on your machine.
 
-### Forking the GitHub Repository:
+### Forking the GitHub Repository
 1. Login or Sign Up to GitHub and open the project [repository](https://github.com/DouglasMeloo/real-state-manager)..
 2. Click the "Fork" button located in the top-right corner of the repository page.
 3. A copy of the repository will now be in your own GitHub account, allowing you to propose changes or use it as a reference for another project.
