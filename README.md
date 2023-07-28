@@ -209,7 +209,7 @@ The real estate manager application underwent rigorous testing to ensure that al
 During the development process, extensive testing was conducted using the terminal to identify and resolve any potential issues. The test approach included various scenarios with correct and incorrect user inputs to thoroughly evaluate the application's behavior and ensure it handles different situations gracefully.
 
 * Test Cases and Results:
-      * The following test cases were devised to cover the major features of the real estate manager application:
+The following test cases were devised to cover the major features of the real estate manager application:
 
 Feature              | Expected Outcome                                   | Testing Performed                                            | Result | Pass/Fail |
 ---------------------|----------------------------------------------------|--------------------------------------------------------------|--------|-----------|
@@ -222,7 +222,7 @@ Validate Integer Input | User enters a positive integer.                   | The
 Validate Integer Input (Negative Scenario) | User enters a negative integer or a non-integer value. | The function prompts the user until a valid positive integer is provided.  | Pass   | Pass      |
 
 
-#### Conclusion:
+#### Conclusion
 Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly.
 
 #### Bugs Fixed 
