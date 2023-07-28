@@ -75,7 +75,7 @@ You can rearrange them by dragging if needed.
 4. Type "git clone" into the terminal and paste the link you copied in the previous step, then press enter.
 5. This will create a local clone of the repository on your machine.
 
-### Forking the GitHub Repository
+#### Forking the GitHub Repository
 1. Login or Sign Up to GitHub and open the project [repository](https://github.com/DouglasMeloo/real-state-manager)..
 2. Click the "Fork" button located in the top-right corner of the repository page.
 3. A copy of the repository will now be in your own GitHub account, allowing you to propose changes or use it as a reference for another project.<p align="right">[(Back to Top)](#top)</p>
@@ -175,17 +175,12 @@ Follow the on-screen prompts to complete the desired action.
 * The Real Estate Manager is designed for individuals interested in managing and tracking property listings efficiently. Whether you are a real estate agent, property owner, or someone searching for properties, this user-friendly software provides a seamless experience to handle property information.
 
 ### User Stories
-     * As a user, I want to add a new property to the database to keep track of various property listings.
-
-     * As a user, I want the ability to update existing property details, such as title, description, price, bedrooms, bathrooms, and location.
-
-     * As a user, I want the option to delete a property entry from the database if it is no longer relevant.
-
-     * As a user, I want to view all property listings in a well-organized manner for easy navigation and reference.
-
-     * As a user, I want the software to validate and ensure that only positive integers are entered for certain property details.
-
-     * As a user, I want the software to provide error messages when invalid data is entered.
+      * As a user, I want to add a new property to the database to keep track of various property listings.
+      * As a user, I want the ability to update existing property details, such as title, description, price, bedrooms, bathrooms, and location.
+      * As a user, I want the option to delete a property entry from the database if it is no longer relevant.
+      * As a user, I want to view all property listings in a well-organized manner for easy navigation and reference.
+      * As a user, I want the software to validate and ensure that only positive integers are entered for certain property details.
+      * As a user, I want the software to provide error messages when invalid data is entered.
 
 ### How to Use
 1. Start the Real Estate Manager: 
