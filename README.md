@@ -14,7 +14,7 @@ Real Estate Manager is a Python command-line application that allows users to ma
 * [Design](#design)
   * [Features](#features)
   * [Potential Enhancements](#potential-enhancements)
-* [User Experience](#user-experience-ux)
+* [User Experience](#user-experience)
 * [Testing](#testing)
 * [Credits](#credits)
 
@@ -34,7 +34,7 @@ Real Estate Manager is a Python command-line application that allows users to ma
 
      * The project utilized the "SQLite3" library as its database management system, ensuring a secure and efficient storage and management of account credentials.
 
-### Frameworks & Tools <p align="right">[(Back to Top)](#top)</p>
+### Frameworks & Tools 
 * To facilitate the development process, this project utilized a [Code Institute template](https://github.com/Code-Institute-Org/python-essentials-template) which offered all the necessary files to run the mock terminal in the browser. This template served as a foundation, streamlining the setup and allowing developers to focus on implementing project-specific functionalities.
 
 * ![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-yellow?logo=github&logoColor=white)
@@ -225,7 +225,7 @@ Validate Integer Input (Negative Scenario) | User enters a negative integer or a
 #### Conclusion
 Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly.
 
-#### Bugs Fixed  <p align="right">[(Back to Top)](#top)</p>
+#### Bugs Fixed 
 * During the PEP8 tests, the following errors were found in the real estate manager program:
 
 1. E501 Line Too Long: Lines exceeding the maximum length (79 characters) were identified. This was fixed by breaking the long lines into smaller, readable chunks.
