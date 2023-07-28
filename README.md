@@ -78,12 +78,12 @@ You can rearrange them by dragging if needed.
 ### Forking the GitHub Repository
 1. Login or Sign Up to GitHub and open the project [repository](https://github.com/DouglasMeloo/real-state-manager)..
 2. Click the "Fork" button located in the top-right corner of the repository page.
-3. A copy of the repository will now be in your own GitHub account, allowing you to propose changes or use it as a reference for another project.
+3. A copy of the repository will now be in your own GitHub account, allowing you to propose changes or use it as a reference for another project.<p align="right">[(Back to Top)](#top)</p>
 
 # Design 
 
 ### Features                                      
-* Add a New Property: <p align="right">[(Back to Top)](#top)</p>
+* Add a New Property: 
      * Users can add a new property to the database by providing details such as title, description, price, number of bedrooms, number of bathrooms, and location.
 
 * Update a Property:
@@ -123,10 +123,10 @@ Enter 5 to exit the program.
 Follow the on-screen prompts to complete the desired action.
 
 * Dependencies
-     * The Real Estate Manager program uses the sqlite3 module, which is included in the Python standard library.
+     * The Real Estate Manager program uses the sqlite3 module, which is included in the Python standard library. <p align="right">[(Back to Top)](#top)</p>
 
 ### Potential Enhancements                                            
-* While the current version of the Real Estate Manager provides essential property management functionalities, there are several potential enhancements and additional features that could be implemented in the future to improve the program further: <p align="right">[(Back to Top)](#top)</p>
+* While the current version of the Real Estate Manager provides essential property management functionalities, there are several potential enhancements and additional features that could be implemented in the future to improve the program further: 
 
 * Search Functionality: 
      * Allow users to search for properties based on specific criteria such as location, price range, number of bedrooms, etc.
