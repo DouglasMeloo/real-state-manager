@@ -34,7 +34,7 @@ Real Estate Manager is a Python command-line application that allows users to ma
 
      * The project utilized the "SQLite3" library as its database management system, ensuring a secure and efficient storage and management of account credentials.
 
-### Frameworks & Tools
+### Frameworks & Tools <p align="right">[(Back to Top)](#top)</p>
 * To facilitate the development process, this project utilized a [Code Institute template](https://github.com/Code-Institute-Org/python-essentials-template) which offered all the necessary files to run the mock terminal in the browser. This template served as a foundation, streamlining the setup and allowing developers to focus on implementing project-specific functionalities.
 
 * ![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-yellow?logo=github&logoColor=white)
@@ -54,7 +54,7 @@ Real Estate Manager is a Python command-line application that allows users to ma
 
 ## Design 
 
-### Features
+### Features <p align="right">[(Back to Top)](#top)</p>
 * Add a New Property:
      * Users can add a new property to the database by providing details such as title, description, price, number of bedrooms, number of bathrooms, and location.
 
@@ -97,7 +97,7 @@ Follow the on-screen prompts to complete the desired action.
 * Dependencies
      * The Real Estate Manager program uses the sqlite3 module, which is included in the Python standard library.
 
-### Potential Enhancements
+### Potential Enhancements <p align="right">[(Back to Top)](#top)</p>
 * While the current version of the Real Estate Manager provides essential property management functionalities, there are several potential enhancements and additional features that could be implemented in the future to improve the program further:
 
 * Search Functionality: 
@@ -143,7 +143,7 @@ Follow the on-screen prompts to complete the desired action.
 
 ## User Experience
 
-### Target Users
+### Target Users <p align="right">[(Back to Top)](#top)</p>
 * The Real Estate Manager is designed for individuals interested in managing and tracking property listings efficiently. Whether you are a real estate agent, property owner, or someone searching for properties, this user-friendly software provides a seamless experience to handle property information.
 
 ### User Stories
@@ -202,7 +202,7 @@ Follow the on-screen prompts to complete the desired action.
 
 ## Testing
 
-#### Testing Process for Real Estate Manager Application
+#### Testing Process for Real Estate Manager Application <p align="right">[(Back to Top)](#top)</p>
 The real estate manager application underwent rigorous testing to ensure that all functionalities work seamlessly, providing users with an easy and straightforward experience to manage property listings effectively.
 
 * Test Approach:
@@ -225,7 +225,7 @@ Validate Integer Input (Negative Scenario) | User enters a negative integer or a
 #### Conclusion
 Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly.
 
-#### Bugs Fixed 
+#### Bugs Fixed  <p align="right">[(Back to Top)](#top)</p>
 * During the PEP8 tests, the following errors were found in the real estate manager program:
 
 1. E501 Line Too Long: Lines exceeding the maximum length (79 characters) were identified. This was fixed by breaking the long lines into smaller, readable chunks.
@@ -243,7 +243,7 @@ Through comprehensive testing, we are confident that the real estate manager app
   *  [Python.org](https://peps.python.org/pep-0008/#introduction)
   *  [W3 Schools](https://www.w3schools.com/python/default.asp#gsc.tab=0)
 
-### Acknowledgements
+### Acknowledgements <p align="right">[(Back to Top)](#top)</p>
 * Thanks to my Mentor Graeme Taylor for their valuable guidance and continuous feedback during the project development.
 
 * I wish to extend my heartfelt appreciation to Danilo Martins and Bruno Farias for the continuous support provided throughout the course. Our regular interactions have fostered a collaborative environment, allowing us to exchange ideas and insights, leading to mutual growth and improvement in our respective projects.
