@@ -167,11 +167,11 @@ Follow the on-screen prompts to complete the desired action.
 * Error Handling:
      * Enhance error handling to provide more informative and user-friendly error messages.
 
-* Please note that these potential enhancements are suggestions and can be tailored to meet specific project requirements and user needs.
+* Please note that these potential enhancements are suggestions and can be tailored to meet specific project requirements and user needs.<p align="right">[(Back to Top)](#top)</p>
 
 # User Experience
 
-### Target Users <p align="right">[(Back to Top)](#top)</p>
+### Target Users 
 * The Real Estate Manager is designed for individuals interested in managing and tracking property listings efficiently. Whether you are a real estate agent, property owner, or someone searching for properties, this user-friendly software provides a seamless experience to handle property information.
 
 ### User Stories
@@ -226,11 +226,11 @@ Follow the on-screen prompts to complete the desired action.
 7. User Guidance:
      * Throughout the process, the software provides clear instructions and ensures that users enter valid and appropriate data.
      * Positive integers are validated for specific property attributes to prevent data errors.
-     * Each action in the Real Estate Manager is designed to be straightforward and user-friendly, making property management and tracking a seamless experience.
+     * Each action in the Real Estate Manager is designed to be straightforward and user-friendly, making property management and tracking a seamless experience.<p align="right">[(Back to Top)](#top)</p>
 
 # Testing
 
-### Testing Process for Real Estate Manager Application <p align="right">[(Back to Top)](#top)</p>
+### Testing Process for Real Estate Manager Application 
 The real estate manager application underwent rigorous testing to ensure that all functionalities work seamlessly, providing users with an easy and straightforward experience to manage property listings effectively.
 
 * Test Approach:
@@ -251,7 +251,7 @@ Validate Integer Input (Negative Scenario) | User enters a negative integer or a
 
 
 ### Conclusion
-Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly.
+Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly. 
 
 ### Bugs Fixed 
 * [PEP8](https://pep8ci.herokuapp.com/#) Validator
@@ -273,7 +273,7 @@ During the PEP8 tests, the following errors were found in the real estate manage
   *  [Python.org](https://peps.python.org/pep-0008/#introduction)
   *  [W3 Schools](https://www.w3schools.com/python/default.asp#gsc.tab=0)
 
-### Acknowledgements <p align="right">[(Back to Top)](#top)</p>
+### Acknowledgements 
 * Thanks to my Mentor Graeme Taylor for their valuable guidance and continuous feedback during the project development.
 
-* I wish to extend my heartfelt appreciation to Danilo Martins and Bruno Farias for the continuous support provided throughout the course. Our regular interactions have fostered a collaborative environment, allowing us to exchange ideas and insights, leading to mutual growth and improvement in our respective projects.
+* I wish to extend my heartfelt appreciation to Danilo Martins and Bruno Farias for the continuous support provided throughout the course. Our regular interactions have fostered a collaborative environment, allowing us to exchange ideas and insights, leading to mutual growth and improvement in our respective projects. <p align="right">[(Back to Top)](#top)</p>
