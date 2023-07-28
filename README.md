@@ -50,8 +50,7 @@ Real Estate Manager is a Python command-line application that allows users to ma
      * Heroku was employed to deploy a live view of the project, allowing users to access and interact with it online.
 
 # Deployment 
-* Project Deployment
-The password manager project was developed using the powerful and user-friendly Visual Studio IDE. To showcase its functionality, the application has been deployed to Heroku from the GitHub repository. This deployment process involves version releasing, ensuring smooth updates, and seamless delivery of enhancements to end-users.
+The Real Estate Manager project was developed using the powerful and user-friendly Visual Studio IDE. To showcase its functionality, the application has been deployed to Heroku from the GitHub repository. This deployment process involves version releasing, ensuring smooth updates, and seamless delivery of enhancements to end-users.
 
 ### Heroku Deployment
 1. Set up a Heroku account and log in to the Heroku Dashboard.
