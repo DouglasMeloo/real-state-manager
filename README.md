@@ -1,9 +1,9 @@
 
-## Real Estate Manager
+# Real Estate Manager
 
 Real Estate Manager is a Python command-line application that allows users to manage property listings. With this user-friendly software, users can add, view, update, and delete property listings stored in an encrypted SQLite database. Simplify your property management tasks with Real Estate Manager.
 
-## Table of Contents
+# Table of Contents
 * [Technologies Used](#technologies-used)
     * [Language](#language)
     * [Libraries](#libraries)
@@ -18,7 +18,7 @@ Real Estate Manager is a Python command-line application that allows users to ma
 * [Testing](#testing)
 * [Credits](#credits)
 
-## Technologies Used
+# Technologies Used
 
 ### Language
 * ![Python](https://img.shields.io/badge/Python-3.x-yellow?logo=python&logoColor=yellow)
@@ -49,10 +49,39 @@ Real Estate Manager is a Python command-line application that allows users to ma
 
      * Heroku was employed to deploy a live view of the project, allowing users to access and interact with it online.
 
-## Deployment 
+# Deployment 
+* Project Deployment
+The password manager project was developed using the powerful and user-friendly Visual Studio IDE. To showcase its functionality, the application has been deployed to Heroku from the GitHub repository. This deployment process involves version releasing, ensuring smooth updates, and seamless delivery of enhancements to end-users.
 
+### Heroku Deployment
+1. Set up a Heroku account and log in to the Heroku Dashboard.
+2. Create a new app by clicking "New" in the top-right corner and selecting "Create new app" from the dropdown menu.
+3. Provide a unique app name and choose the region closest to you (EU or USA).
+4. Click on "Create App" to create the app on Heroku.
+5. To run the project on Heroku, we need to install the required dependencies.
+6. In the terminal, execute the command `pip3 freeze > requirements.txt` to create a list of dependencies in the `requirements.txt` file.
+7. To support the dependencies, select "Add Buildpack" in the Heroku dashboard.
+8. The order of buildpacks is essential. Add "Python" first and click "Save changes," then add "Node.js" as the second buildpack and click "Save changes" again. 
+You can rearrange them by dragging if needed.
+9. Navigate to the "Deploy" section and choose "GitHub" as the deployment method.
+10. Connect your Heroku app to the GitHub repository by entering the repository name, clicking "Search," and then "Connect" when it appears below.
+11. Select the branch you want to build your app from.
+12. Optionally, you can enable "Automatic Deploys" to keep your app up to date with changes from the GitHub repository.
+13. Wait for the app to build. Once it's ready, you will see the message "App was successfully deployed" along with a 'View' button that leads to your deployed link.
 
-## Design 
+### Run locally
+1. Login or Sign Up to GitHub and open the project [repository](https://github.com/DouglasMeloo/real-state-manager).
+2. Click on the "Code" button and choose whether you want to clone with HTTPS, SSH, or GitHub CLI. Copy the provided link.
+3. Open the terminal in your preferred code editor and navigate to the desired location for the cloned directory.
+4. Type "git clone" into the terminal and paste the link you copied in the previous step, then press enter.
+5. This will create a local clone of the repository on your machine.
+
+* Forking the GitHub Repository:
+1. Login or Sign Up to GitHub and open the project [repository](https://github.com/DouglasMeloo/real-state-manager)..
+2. Click the "Fork" button located in the top-right corner of the repository page.
+3. A copy of the repository will now be in your own GitHub account, allowing you to propose changes or use it as a reference for another project.
+
+# Design 
 
 ### Features <p align="right">[(Back to Top)](#top)</p>
 * Add a New Property:
@@ -141,7 +170,7 @@ Follow the on-screen prompts to complete the desired action.
 
 * Please note that these potential enhancements are suggestions and can be tailored to meet specific project requirements and user needs.
 
-## User Experience
+# User Experience
 
 ### Target Users <p align="right">[(Back to Top)](#top)</p>
 * The Real Estate Manager is designed for individuals interested in managing and tracking property listings efficiently. Whether you are a real estate agent, property owner, or someone searching for properties, this user-friendly software provides a seamless experience to handle property information.
@@ -200,9 +229,9 @@ Follow the on-screen prompts to complete the desired action.
      * Positive integers are validated for specific property attributes to prevent data errors.
      * Each action in the Real Estate Manager is designed to be straightforward and user-friendly, making property management and tracking a seamless experience.
 
-## Testing
+# Testing
 
-#### Testing Process for Real Estate Manager Application <p align="right">[(Back to Top)](#top)</p>
+### Testing Process for Real Estate Manager Application <p align="right">[(Back to Top)](#top)</p>
 The real estate manager application underwent rigorous testing to ensure that all functionalities work seamlessly, providing users with an easy and straightforward experience to manage property listings effectively.
 
 * Test Approach:
@@ -222,12 +251,12 @@ Validate Integer Input | User enters a positive integer.                   | The
 Validate Integer Input (Negative Scenario) | User enters a negative integer or a non-integer value. | The function prompts the user until a valid positive integer is provided.  | Pass   | Pass      |
 
 
-#### Conclusion
+### Conclusion
 Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly.
 
-#### Bugs Fixed 
-* PEP8 Validator
-      * During the PEP8 tests, the following errors were found in the real estate manager program:
+### Bugs Fixed 
+* [PEP8](https://pep8ci.herokuapp.com/#) Validator
+During the PEP8 tests, the following errors were found in the real estate manager program:
 
 1. E501 Line Too Long: Lines exceeding the maximum length (79 characters) were identified. This was fixed by breaking the long lines into smaller, readable chunks.
 2. E302 Expected 2 Blank Lines, Found 1: Insufficient blank lines were observed between code blocks. The code was modified to include the required two blank lines for better readability.
@@ -235,7 +264,8 @@ Through comprehensive testing, we are confident that the real estate manager app
 * The issues were resolved in the following git commit:
       * commit: 743cdcb
 
-## Credits
+
+# Credits
 
 ### References
 * The development of this project drew insights and knowledge from the following sources:
