@@ -179,7 +179,6 @@ Follow the on-screen prompts to complete the desired action.
 * As a user, I want the flexibility to update existing property details, such as title, description, price, bedrooms, bathrooms, and location, to ensure accurate and up-to-date information.
 * As a user, I want the option to easily delete a property entry from the database if it becomes irrelevant or is no longer available.
 * As a user, I expect the software to present all property listings in a well-organized manner, facilitating easy navigation and quick reference.
-* To maintain data integrity, I expect the software to validate and accept only positive integers for specific property details like bedrooms and bathrooms.
 * As a user, I want the software to provide clear and informative error messages when I enter invalid data, helping me understand and correct any mistakes.
 
 ### How to Use
