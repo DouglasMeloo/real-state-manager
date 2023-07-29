@@ -76,7 +76,7 @@ You can rearrange them by dragging if needed.
 5. This will create a local clone of the repository on your machine.
 
 #### Forking the GitHub Repository
-1. Login or Sign Up to GitHub and open the project [repository](https://github.com/DouglasMeloo/real-state-manager)..
+1. Login or Sign Up to GitHub and open the project [repository](https://github.com/DouglasMeloo/real-state-manager).
 2. Click the "Fork" button located in the top-right corner of the repository page.
 3. A copy of the repository will now be in your own GitHub account, allowing you to propose changes or use it as a reference for another project.<p align="right">[(Back to Top)](#top)</p>
 
@@ -255,8 +255,7 @@ During the PEP8 tests, the following errors were found in the real estate manage
 2. E302 Expected 2 Blank Lines, Found 1: Insufficient blank lines were observed between code blocks. The code was modified to include the required two blank lines for better readability.
 
 * The issues were resolved in the following git commit:
-      * commit: 743cdcb
-
+commit: 743cdcb
 
 # Credits
 
