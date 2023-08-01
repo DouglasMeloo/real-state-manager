@@ -56,15 +56,15 @@ def create_house(connector):
     cursor.execute(sql_insert, values)
     connector.commit()
 
-    # Get the last inserted row ID (primary key) and print it
     last_inserted_id = cursor.lastrowid
+    """Get the last inserted row ID (primary key) and print it"""
     print("Last inserted rowid:", last_inserted_id)
 
     cursor.close()
 
 
-# Function to update an existing property in the database
 def update_property(connector):
+    """ Function to update an existing property in the database """
     property_id = validate_integer_input("Enter the ID of property to update:")
     cursor = connector.cursor()
     cursor.execute(f"SELECT * FROM {TABLE} WHERE id = ?", (property_id,))
