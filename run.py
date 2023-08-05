@@ -7,8 +7,10 @@ DATABASE = "./real_estate.db"
 TABLE = "property_listings"
 
 
-# Function to validate and get a positive integer input from the user
 def validate_integer_input(prompt):
+    """
+    Function to validate and get a positive integer input from the user
+    """
     while True:
         try:
             value = int(input(prompt))
@@ -19,8 +21,10 @@ def validate_integer_input(prompt):
             print("Invalid input. Please enter a positive integer.")
 
 
-# Function to print property details
 def print_property_details(property_data):
+    """
+    Function to print property details
+    """
     print("ID:", property_data[0])
     print("Title:", property_data[1])
     print("Description:", property_data[2])
@@ -30,8 +34,10 @@ def print_property_details(property_data):
     print("Location:", property_data[6])
 
 
-# Function to create a new property entry in the database
 def create_house(connector):
+    """
+    Function to create a new property entry in the database
+    """
     new_house = {
         "title": "",
         "description": "",
@@ -75,6 +81,9 @@ def create_house(connector):
 
 
 def update_property(connector):
+    """
+    Function to update an existing property in the database
+    """
     property_id = validate_integer_input("Enter the ID of property to update:")
     cursor = connector.cursor()
     cursor.execute(f"SELECT * FROM {TABLE} WHERE id = ?", (property_id,))
@@ -89,7 +98,8 @@ def update_property(connector):
     print_property_details(property_data)
 
     new_house = {}
-    for key in ["title", "description", "price", "bedrooms", "bathrooms", "location"]:
+    for key in ["title", "description", "price", "bedrooms",
+                "bathrooms", "location"]:
         if key == "price" or key == "bedrooms" or key == "bathrooms":
             new_house[key] = validate_integer_input(f"Enter the new {key}:")
         else:
@@ -119,6 +129,9 @@ def update_property(connector):
 
 
 def delete_property(connector):
+    """
+    Function to delete a property from the database
+    """
     property_id = validate_integer_input("Enter the ID of property to delete:")
     cursor = connector.cursor()
     cursor.execute(f"SELECT * FROM {TABLE} WHERE id = ?", (property_id,))
@@ -132,7 +145,8 @@ def delete_property(connector):
     print("Property Details to Delete:")
     print_property_details(property_data)
 
-    confirmation = input("Are you sure you want to delete this property? (yes/no): ")
+    confirmation = input("Are you sure you want to delete this property? "
+                         + "(yes/no): ")
     if confirmation.lower() == "yes":
         cursor = connector.cursor()
         cursor.execute(f"DELETE FROM {TABLE} WHERE id = ?", (property_id,))
@@ -144,6 +158,9 @@ def delete_property(connector):
 
 
 def query_properties(connector):
+    """
+    Function to query and display all properties in the database
+    """
     cursor = connector.cursor()
     cursor.execute(f"SELECT * FROM {TABLE}")
     properties = cursor.fetchall()
@@ -157,8 +174,11 @@ def query_properties(connector):
             print_property_details(property_data)
             print("--------------------")
 
-# Function to create the database table if it does not exist
+
 def create_table(databasepath):
+    """
+    Function to create the database table if it does not exist
+    """
     connection = sqlite3.connect(DATABASE)
     cursor = connection.cursor()
     cursor.execute(
@@ -179,8 +199,10 @@ def create_table(databasepath):
     return connection
 
 
-# Main function to run the real estate manager program
 def main():
+    """
+    Main function to run the real estate manager program
+    """
     connector = create_table(DATABASE)
 
     while True:
