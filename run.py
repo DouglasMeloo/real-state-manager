@@ -213,7 +213,7 @@ def main():
         print("4. View all properties")
         print("5. Exit")
 
-        choice = input("Enter your choice(1/2/3/4/5):")
+        choice = input("Enter your choice:")
 
         if choice == "1":
             create_house(connector)
