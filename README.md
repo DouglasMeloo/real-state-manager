@@ -177,6 +177,7 @@ You can rearrange them by dragging if needed.
 ### How to Use
 1. Start the Real Estate Manager:[Real Estate Manager](https://real-state-manager-08c67701a92f.herokuapp.com/).
      * Launch the software, and it will connect to the real_estate.db database. The main menu will be displayed, providing various options.
+     ![Real State Manager](/assets/images/menuoptions.png)
 
 2. Add a New Property:
      * Choose option "1" from the main menu to add a new property.
