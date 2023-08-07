@@ -86,18 +86,22 @@ You can rearrange them by dragging if needed.
 ### Features                                      
 * Add a New Property: 
      * Users can add a new property to the database by providing details such as title, description, price, number of bedrooms, number of bathrooms, and location.
+
      ![Real State Manager](/assets/images/addnewproperty.gif)
 
 * Update a Property:
      * Users can update the details of an existing property by entering the property's ID and then providing the new information for the title, description, price, bedrooms, bathrooms, and location.
+
      ![Real State Manager](/assets/images/updateproperty.gif)
 
 * Delete a Property
      * Users can delete a property from the database by entering the property's ID. A confirmation prompt ensures the deletion is intentional.
+
      ![Real State Manager](/assets/images/deleteproperty.gif)
 
 * View All Properties
      * Users can view all the properties currently stored in the database. The program displays the ID, title, description, price, number of bedrooms, number of bathrooms, and location for each property.
+
      ![Real State Manager](/assets/images/viewallproperty.gif)
 
 * Data Validation
@@ -110,6 +114,7 @@ You can rearrange them by dragging if needed.
      * Run the real_estate_manager.py script.
 
 * The main menu will be displayed with the following options:
+
 ![Real State Manager](/assets/images/menuoptions.png)
 
 * Dependencies
