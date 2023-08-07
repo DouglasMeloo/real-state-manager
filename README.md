@@ -115,13 +115,6 @@ You can rearrange them by dragging if needed.
 * Database Persistence
      * The program uses an SQLite database to store property listings, ensuring that data is persisted between different program runs.
 
-* How to Use
-     * Access here [Real Estate Manager](https://real-state-manager-08c67701a92f.herokuapp.com/).
-
-* The main menu will be displayed with the following options:
-
-![Real State Manager](/assets/images/menuoptions.png)
-
 * Dependencies
      * The Real Estate Manager program uses the sqlite3 module, which is included in the Python standard library. <p align="right">[(Back to Top)](#top)</p>
 
@@ -182,7 +175,7 @@ You can rearrange them by dragging if needed.
 * As a user, I want the software to provide clear and informative error messages when I enter invalid data, helping me understand and correct any mistakes.
 
 ### How to Use
-1. Start the Real Estate Manager: 
+1. Start the Real Estate Manager:[Real Estate Manager](https://real-state-manager-08c67701a92f.herokuapp.com/).
      * Launch the software, and it will connect to the real_estate.db database. The main menu will be displayed, providing various options.
 
 2. Add a New Property:
