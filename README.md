@@ -260,7 +260,7 @@ During the PEP8 tests, the following errors were found in the real estate manage
 2. E302 Expected 2 Blank Lines, Found 1: Insufficient blank lines were observed between code blocks. The code was modified to include the required two blank lines for better readability.
 
 * The issues were resolved in the following git commit:
-commit: 743cdcb
+      * [commit 743cdcb](https://github.com/DouglasMeloo/real-state-manager/commit/743cdcba1c20b1d949830bb749b71abe86cf410e)
 
 # Credits
 
