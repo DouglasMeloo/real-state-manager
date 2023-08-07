@@ -116,7 +116,7 @@ You can rearrange them by dragging if needed.
      * The program uses an SQLite database to store property listings, ensuring that data is persisted between different program runs.
 
 * How to Use
-     * Run the real_estate_manager.py script.
+     * Access here [Real Estate Manager](https://real-state-manager-08c67701a92f.herokuapp.com/).
 
 * The main menu will be displayed with the following options:
 
