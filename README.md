@@ -88,26 +88,31 @@ You can rearrange them by dragging if needed.
 
 # Design 
 
+### Use Case Diagram
+* The Use Case Diagram below provides a visual representation of the main functionalities and interactions of the Real Estate Manager application. This diagram illustrates the various actions that users can perform, such as adding, updating, and deleting property listings, as well as viewing property details. The diagram helps to outline the user experience and flow of the software, offering an overview of how users can effectively manage their property listings.
+
+![Diagram](/assets/images/diagram.png)
+
 ### Features                                      
 * Add a New Property: 
      * Users can add a new property to the database by providing details such as title, description, price, number of bedrooms, number of bathrooms, and location.
 
-     ![Real State Manager](/assets/images/addnewproperty.gif)
+     ![Add a New Property](/assets/images/addnewproperty.gif)
 
 * Update a Property:
      * Users can update the details of an existing property by entering the property's ID and then providing the new information for the title, description, price, bedrooms, bathrooms, and location.
 
-     ![Real State Manager](/assets/images/updateproperty.gif)
+     ![Update a Property](/assets/images/updateproperty.gif)
 
 * Delete a Property
      * Users can delete a property from the database by entering the property's ID. A confirmation prompt ensures the deletion is intentional.
 
-     ![Real State Manager](/assets/images/deleteproperty.gif)
+     ![Delete a Property](/assets/images/deleteproperty.gif)
 
 * View All Properties
      * Users can view all the properties currently stored in the database. The program displays the ID, title, description, price, number of bedrooms, number of bathrooms, and location for each property.
 
-     ![Real State Manager](/assets/images/viewallproperty.gif)
+     ![View All Properties](/assets/images/viewallproperty.gif)
 
 * Data Validation
      * The program includes data validation to ensure that user inputs are correctly formatted and that appropriate data types are used. Users are prompted to reenter values if they provide invalid inputs.
