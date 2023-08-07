@@ -233,16 +233,21 @@ During the development process, extensive testing was conducted using the termin
 * Test Cases and Results:
 The following test cases were devised to cover the major features of the real estate manager application:
 
-Feature              | Expected Outcome                                   | Testing Performed                                            | Result | Pass/Fail |
----------------------|----------------------------------------------------|--------------------------------------------------------------|--------|-----------|
-Add a new property   | User enters valid property details.               | Entered property is successfully added to the database, and the last inserted row ID is printed.           | Pass   | Pass      |
-Update a property    | User enters an existing property ID and valid updated details. | Specified property is successfully updated with the new details.           | Pass   | Pass      |
-Delete a property    | User enters an existing property ID and confirms the deletion. | Specified property is successfully deleted from the database.            | Pass   | Pass      |
-View all properties  | The database contains multiple properties.       | All properties are displayed on the console.                       | Pass   | Pass      |
-Exit                 | User chooses to exit the program.                 | The program terminates gracefully.                                           | Pass   | Pass      |
-Validate Integer Input | User enters a positive integer.                   | The function correctly returns the entered value.                                  | Pass   | Pass      |
-Validate Integer Input (Negative Scenario) | User enters a negative integer or a non-integer value. | The function prompts the user until a valid positive integer is provided.  | Pass   | Pass      |
-
+Feature                                       | Expected Outcome                                         | Testing Performed                                                | Result | Pass/Fail |
+----------------------------------------------|----------------------------------------------------------|------------------------------------------------------------------|--------|-----------|
+Add a new property                            | User enters valid property details.                     | Entered property is successfully added to the database, and the last inserted row ID is printed. | Pass   | Pass      |
+Update a property                             | User enters an existing property ID and valid updated details. | Specified property is successfully updated with the new details. | Pass   | Pass      |
+Delete a property                             | User enters an existing property ID and confirms the deletion. | Specified property is successfully deleted from the database. | Pass   | Pass      |
+View all properties                           | The database contains multiple properties.               | All properties are displayed on the console.                   | Pass   | Pass      |
+Exit                                          | User chooses to exit the program.                       | The program terminates gracefully.                           | Pass   | Pass      |
+Validate Integer Input                       | User enters a positive integer.                         | The function correctly returns the entered value.              | Pass   | Pass      |
+Validate Integer Input (Negative Scenario)    | User enters a negative integer or a non-integer value. | The function prompts the user until a valid positive integer is provided. | Pass   | Pass      |
+Property Deletion with Wrong ID               | User attempts to delete a property with a wrong ID.    | Program displays "Property with the ID not found" message.    | Pass   | Pass      |
+Property Update with Wrong ID                 | User attempts to update a property with a wrong ID.     | Program displays "Property with the ID not found" message.    | Pass   | Pass      |
+Invalid Input for Price                       | User enters a non-numeric value for price.              | Program displays "Invalid input. Please enter a positive Integer" message. | Pass   | Pass      |
+Invalid Input for Bathrooms                   | User enters a non-numeric value for bathrooms.          | Program displays "Invalid input. Please enter a positive Integer" message. | Pass   | Pass      |
+Invalid Input for Bedrooms                    | User enters a non-numeric value for bedrooms.           | Program displays "Invalid input. Please enter a positive Integer" message. | Pass   | Pass      |
+Invalid Main Menu Choice                      | User enters a number that doesn't correspond to a menu choice. | Program displays "Invalid Choice. Please try again" message. | Pass   | Pass      |
 
 ### Conclusion
 Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly. 
