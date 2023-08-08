@@ -252,16 +252,9 @@ Invalid Main Menu Choice                      | User enters a number that doesn'
 ### Conclusion
 Through comprehensive testing, we are confident that the real estate manager application is reliable and robust, meeting the needs and expectations of users. All test cases passed successfully, demonstrating that the application functions as intended and efficiently handles user inputs. By delivering a thoroughly tested real estate manager, we aim to provide users with a seamless experience to manage property listings effortlessly. 
 
-### Bugs Fixed 
-* [PEP8](https://pep8ci.herokuapp.com/#) Validator
-During the PEP8 tests, the following errors were found in the real estate manager program:
-
-1. E501 Line Too Long: Lines exceeding the maximum length (79 characters) were identified. This was fixed by breaking the long lines into smaller, readable chunks.
-2. E302 Expected 2 Blank Lines, Found 1: Insufficient blank lines were observed between code blocks. The code was modified to include the required two blank lines for better readability.
-
-* The issues were resolved in the following git commit:
-
-      * commit: 743cdcb
+### Validator 
+* [PEP8](https://pep8ci.herokuapp.com/#) Test Results: No Errors Detected.
+Recent PEP8 tests have revealed zero errors in the real estate manager program. Our code now aligns perfectly with PEP8 standards.
 
 ![PEP 8 Validator](/assets/images/pepvalidor.png)
 
