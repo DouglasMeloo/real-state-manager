@@ -254,6 +254,7 @@ Through comprehensive testing, we are confident that the real estate manager app
 
 ### Validator 
 * [PEP8](https://pep8ci.herokuapp.com/#) Test Results: No Errors Detected.
+
 Recent PEP8 tests have revealed zero errors in the real estate manager program. Our code now aligns perfectly with PEP8 standards.
 
 ![PEP 8 Validator](/assets/images/pepvalidor.png)
