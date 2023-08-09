@@ -1,7 +1,5 @@
 import os
 import sqlite3
-
-
 # Constants for the database file and table
 DATABASE = "./real_estate.db"
 TABLE = "property_listings"
@@ -46,16 +44,13 @@ def create_house(connector):
         "bathrooms": 0,
         "location": "",
     }
-
     # Collect property details from the user
     for key in new_house:
         if key == "price" or key == "bedrooms" or key == "bathrooms":
             new_house[key] = validate_integer_input(f"Insert the {key}: ")
         else:
             new_house[key] = input(f"Insert the {key}: ")
-
     print(new_house)
-
     # Insert the new property into the database
     cursor = connector.cursor()
     sql_insert = (
@@ -72,11 +67,9 @@ def create_house(connector):
     )
     cursor.execute(sql_insert, values)
     connector.commit()
-
     last_inserted_id = cursor.lastrowid
     """Get the last inserted row ID (primary key) and print it"""
     print("Last inserted rowid:", last_inserted_id)
-
     cursor.close()
 
 
@@ -89,14 +82,11 @@ def update_property(connector):
     cursor.execute(f"SELECT * FROM {TABLE} WHERE id = ?", (property_id,))
     property_data = cursor.fetchone()
     cursor.close()
-
     if not property_data:
         print("Property with the given ID not found.")
         return
-
     print("Existing Property Details:")
     print_property_details(property_data)
-
     new_house = {}
     for key in ["title", "description", "price", "bedrooms",
                 "bathrooms", "location"]:
@@ -104,14 +94,12 @@ def update_property(connector):
             new_house[key] = validate_integer_input(f"Enter the new {key}:")
         else:
             new_house[key] = input(f"Enter the new {key}:")
-
     cursor = connector.cursor()
     sql_update = f"""
         UPDATE {TABLE} SET title = ?, description = ?, price = ?,
         bedrooms = ?, bathrooms = ?, location = ?
         WHERE id = ?
     """
-
     values = (
         new_house["title"],
         new_house["description"],
@@ -121,7 +109,6 @@ def update_property(connector):
         new_house["location"],
         property_id,
     )
-
     cursor.execute(sql_update, values)
     connector.commit()
     cursor.close()
@@ -137,14 +124,11 @@ def delete_property(connector):
     cursor.execute(f"SELECT * FROM {TABLE} WHERE id = ?", (property_id,))
     property_data = cursor.fetchone()
     cursor.close()
-
     if not property_data:
         print("Property with the given ID not found.")
         return
-
     print("Property Details to Delete:")
     print_property_details(property_data)
-
     confirmation = input("Are you sure you want to delete this property? "
                          + "(yes/no): ")
     if confirmation.lower() == "yes":
@@ -165,7 +149,6 @@ def query_properties(connector):
     cursor.execute(f"SELECT * FROM {TABLE}")
     properties = cursor.fetchall()
     cursor.close()
-
     if not properties:
         print("No properties found.")
     else:
@@ -194,7 +177,6 @@ def create_table(databasepath):
         )
     """
     )
-
     connection.commit()
     return connection
 
@@ -204,7 +186,6 @@ def main():
     Main function to run the real estate manager program
     """
     connector = create_table(DATABASE)
-
     while True:
         print("\n--- Real Estate Manager ---")
         print("1. Add a new property")
@@ -212,9 +193,7 @@ def main():
         print("3. Delete a property")
         print("4. View all properties")
         print("5. Exit")
-
         choice = input("Enter your choice:")
-
         if choice == "1":
             create_house(connector)
         elif choice == "2":
@@ -227,7 +206,6 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
-
     connector.close()
 
 
