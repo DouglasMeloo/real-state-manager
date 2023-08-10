@@ -5,7 +5,7 @@
 Real Estate Manager is a Python command-line application that allows users to manage property listings. With this user-friendly software, users can add, view, update, and delete property listings stored in an encrypted SQLite database. Simplify your property management tasks with Real Estate Manager.
 
 ### Demo
-Explore the Real Estate Manager in action by trying out our live deployed on Heroku. You can experience the features and functionalities of the software. Simply access the following URL to start exploring the Real Estate Manager: [Real Estate Manager](https://real-state-manager-08c67701a92f.herokuapp.com/)
+Explore the Real Estate Manager in action by trying out our live deployed on Heroku. You can experience the features and functionalities of the software. Simply access the following URL to start exploring the Real Estate Manager: [Real Estate Manager](https://real-state-manager-0d44d13ec066.herokuapp.com/)
 
 Feel free to interact with the options, add properties, update details, delete entries, and view property listings. This provides a hands-on opportunity to get a glimpse of how the Real Estate Manager can simplify property management tasks.
 
@@ -180,7 +180,7 @@ You can rearrange them by dragging if needed.
 * As a user, I want the software to provide clear and informative error messages when I enter invalid data, helping me understand and correct any mistakes.
 
 ### How to Use
-1. Start the Real Estate Manager:[Real Estate Manager](https://real-state-manager-08c67701a92f.herokuapp.com/).
+1. Start the Real Estate Manager:[Real Estate Manager](https://real-state-manager-0d44d13ec066.herokuapp.com/).
      * Launch the software, and it will connect to the real_estate.db database. The main menu will be displayed, providing various options.
      
      ![Real State Manager](/assets/images/menuoptions.png)
