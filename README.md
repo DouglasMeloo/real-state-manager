@@ -102,7 +102,7 @@ You can rearrange them by dragging if needed.
 * Update a Property:
      * Users can update the details of an existing property by entering the property's ID and then providing the new information for the title, description, price, bedrooms, bathrooms, and location.
 
-     ![Update a Property](/assets/images/updateproperty.gif)
+     ![Update a Property](/assets/images/updatinghouse.gif)
 
 * Delete a Property
      * Users can delete a property from the database by entering the property's ID. A confirmation prompt ensures the deletion is intentional.
@@ -112,10 +112,12 @@ You can rearrange them by dragging if needed.
 * View All Properties
      * Users can view all the properties currently stored in the database. The program displays the ID, title, description, price, number of bedrooms, number of bathrooms, and location for each property.
 
-     ![View All Properties](/assets/images/viewallproperty.gif)
+     ![View All Properties](/assets/images/viewallproperties.gif)
 
 * Data Validation
      * The program includes data validation to ensure that user inputs are correctly formatted and that appropriate data types are used. Users are prompted to reenter values if they provide invalid inputs.
+
+     ![Data Validation](/assets/images/datavalidation.gif)
 
 * Database Persistence
      * The program uses an SQLite database to store property listings, ensuring that data is persisted between different program runs.
